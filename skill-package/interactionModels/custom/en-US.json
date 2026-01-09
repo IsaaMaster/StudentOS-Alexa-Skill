@@ -1,0 +1,179 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "class",
+              "type": "Classes"
+            }
+          ],
+          "name": "check_canvas_grades",
+          "samples": [
+            "Check my grade in {class}",
+            "What is my grade in {class} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "content",
+              "type": "email_content"
+            }
+          ],
+          "name": "draft_email",
+          "samples": [
+            "draft me an email {content}",
+            "write me an email {content}",
+            "Draft an email {content}",
+            "Write an email {content}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "summarize_emails",
+          "samples": [
+            "brief me on email updates",
+            "summarize my emails",
+            "Summarize my recent emails"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.US_FIRST_NAME"
+            },
+            {
+              "name": "reply",
+              "type": "email_content"
+            }
+          ],
+          "name": "draft_reply",
+          "samples": [
+            "respond to {name} telling her {reply}",
+            "respond to {name} telling him {reply}",
+            "respond to {name} telling them {reply}",
+            "write a response {name} saying that {reply}",
+            "draft a reply to {name} saying that {reply}",
+            "respond to {name} saying that {reply}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "check_canvas_assignments",
+          "samples": [
+            "What are my upcoming assignments"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "beach volleyball"
+              }
+            },
+            {
+              "name": {
+                "value": "c.s one fifty"
+              }
+            },
+            {
+              "name": {
+                "value": "new testement"
+              }
+            },
+            {
+              "name": {
+                "value": "p. chem"
+              }
+            },
+            {
+              "name": {
+                "value": "c.s. capstone"
+              }
+            },
+            {
+              "name": {
+                "value": "numerical analysis"
+              }
+            },
+            {
+              "name": {
+                "value": "programming languages"
+              }
+            },
+            {
+              "name": {
+                "value": "c.s. ten"
+              }
+            }
+          ],
+          "name": "Classes"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "making a room reservation"
+              }
+            },
+            {
+              "name": {
+                "value": "asking a professor an assignment question"
+              }
+            },
+            {
+              "name": {
+                "value": "telling a professor that I will not make it to class"
+              }
+            },
+            {
+              "name": {
+                "value": "asking a professor for an extension on an assignment"
+              }
+            }
+          ],
+          "name": "email_content"
+        }
+      ],
+      "invocationName": "student mode"
+    }
+  }
+}
